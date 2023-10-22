@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Stack
+comment0.text=\n\ Write\ a\ description\ of\ class\ Stack\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Stack()
+comment2.params=
+comment2.target=java.lang.String\ top()
+comment3.params=s
+comment3.target=void\ push(java.lang.String)
+comment4.params=
+comment4.target=void\ pop()
+comment5.params=
+comment5.target=boolean\ empty()
+numComments=6

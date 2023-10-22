@@ -1,0 +1,3 @@
+/home/joaodatina/CLionProjects/guiao3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joaodatina/CLionProjects/guiao3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joaodatina/CLionProjects/guiao3/cmake-build-debug/CMakeFiles/guiao3.dir

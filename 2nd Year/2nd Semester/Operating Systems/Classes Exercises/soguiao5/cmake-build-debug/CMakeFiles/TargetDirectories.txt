@@ -1,0 +1,3 @@
+/home/joaodatina/CLionProjects/soguiao5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joaodatina/CLionProjects/soguiao5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joaodatina/CLionProjects/soguiao5/cmake-build-debug/CMakeFiles/soguiao5.dir
