@@ -1,0 +1,1 @@
+gcc -o final/bot src/*.c -lm
