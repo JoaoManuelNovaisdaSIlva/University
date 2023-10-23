@@ -1,0 +1,71 @@
+-------------------- PROBLEMA 2 - TAX
+-- CODIGO
+gene = (trimS -|- g) . out
+
+g = trimS >< (groupBy cmpS)
+trimS = dropWhile (' '==)
+cmpS a b = (length (takeWhile (' '==) a)) < (length (takeWhile (' '==) b))
+
+-- EXPLICAÇÃO
+gene = aplica o trimS no caso final da lista e aplica o g nos outros casos
+g = aplica o trimS à primeira string e agrupa as strings na outra lista por quantidade de espaços que tem no inicio
+trimS = retira os espaços no inicio
+cmpS = compara os espaços no inicio de 2 strings
+
+o (groupBy cmpS) deve ser o mais complexo aí, basicamente faz uma cena assim:
+["_a", "__b", "_c", "_d"] -> [["_a", "__b"], ["_c"], ["_d"]] (em vez de espaços meti _ para se ver melhor)
+
+ANAMORFISMO GERA ESTRUTURA DE DADOS E CATAMORFISMO CONSOME ESTRUTURAS DE DADOS
+HILOMORFISMO = CATAMORFISMO . ANAMORFISMO
+DIVIDE AND CONQUER
+
+------------------ PROBLEMA 2 - POST
+-- CODIGO
+post = cataExp postAux
+
+postAux = either (singl . singl) (uncurry postF)
+postF s = concat . ([[s]]:) . map(\ls -> map(\x -> s:x) ls)
+
+-- EXPLICAÇÃO
+singl :: a -> [a]
+post = catamorfismo do postAux
+postAux:
+    primeiro caso (apenas uma string) = passa de a para [[a]]
+    segundo caso (recebe (s, l), s é uma string, e l é uma lista de listas de listas de strings ([[[string]]])):
+        - primeiro passo = a cada lista de strings dentro do argumento pointfree adiciona o s ao início
+        - segundo passo = adiciona uma lista so com o s à lista argumento (modificada) e concatena
+
+ex. postAux (s, [[[a,b],[c,d]], [[e,f]]]) = (concat . ([[s]]:)) ([[[s,a,b], [s,c,d]], [[s,e,f]]])
+                                          = concat [[[s]], [[s,a,b], [s,c,d]], [[s,e,f]]]
+                                          = [[s], [s,a,b], [s,c,d], [s,e,f]
+
+O post é usado num map por isso recebe sempre o resultado do postAux multiplicado pelo numero de elementos da lista no segundo elemento
+
+
+
+-------------- PROBLEMA 3 - SIERPINSKI
+-- CODIGO
+squares = anaRose gsq
+
+gsq = split fgsq genS
+
+fgsq (((x,y), s), i) = ((x + (s/3), y + (s/3)), s/3)
+
+genS (_, 0) = []
+genS (sq, i) = map(\x -> (ds sq x, i-1)) sides
+
+ds ((x,y), s) (a,b) = ((x + (s/3)*a, y + (s/3)*b), s/3)
+
+sides = [(0,0),(0,1),(0,2),(1,0),(1,2),(2,0),(2,1),(2,2)]
+
+rose2List = cataRose gr2l 
+
+gr2l = uncurry (:) . (id >< concat)
+
+
+-- EXPLICAÇÃO
+gsq = gene do anamorfismo do squares
+fgsq = no caso de só ter um quadrado, parte o lado do quadrado em 3 e calcula a nova posição
+genS = no caso de receber um quadrado (sq) e uma profundidade (i), calcula os novos quadrados baseando-se num desvio (sides) que varia entre 0 e 2
+
+gr2l = mantem o quadrado (primeiro elemento do tuplo) e concatena as listas de quadrados que recebe no segundo elemento do tuplo. No fim concatena tudo para ter so uma lista de quadrados
