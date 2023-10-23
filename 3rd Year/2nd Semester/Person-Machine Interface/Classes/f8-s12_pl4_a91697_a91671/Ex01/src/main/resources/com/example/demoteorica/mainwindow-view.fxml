@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="600.0" maxWidth="1.7976931348623157E308" minHeight="300.0" prefHeight="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoteorica.ui.MainWindowController">
+   <MenuBar>
+     <menus>
+       <Menu mnemonicParsing="false" text="File">
+         <items>
+           <MenuItem mnemonicParsing="false" onAction="#onCloseAction" text="Close">
+                  <accelerator>
+                     <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                  </accelerator></MenuItem>
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Help">
+         <items>
+           <MenuItem mnemonicParsing="false" onAction="#onAboutAction" text="About" />
+         </items>
+       </Menu>
+     </menus>
+   </MenuBar>
+
+    <Label fx:id="welcomeText" text="Olá Mundo!">
+      <font>
+         <Font name="Roboto Light" size="25.0" />
+      </font></Label>
+   <GridPane prefWidth="440.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="-Infinity" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="257.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="111.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="37.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="32.0" minHeight="35.0" prefHeight="32.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label text="Celsius:" />
+         <Label text="Fahrenheit: " GridPane.rowIndex="1" />
+         <Label text="Kelvin:" GridPane.rowIndex="2" />
+         <TextField fx:id="celsiusTextField" minHeight="25.0" onAction="#onCelsiusAction" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" />
+         <TextField fx:id="fahrnheitTextField" minHeight="25.0" onAction="#onFahrnheitAction" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+         <Slider fx:id="kelvinSLider" max="400.0" onMouseReleased="#onKelvinAction" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets top="10.0" />
+            </GridPane.margin></Slider>
+         <Label fx:id="kelvinLabel" minHeight="25.0" text="----" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      </children>
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" />
+      </VBox.margin>
+   </GridPane>
+   <TableView fx:id="historyTable" focusTraversable="false">
+     <columns>
+       <TableColumn fx:id="celsiusCol" editable="false" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" sortable="false" text="Celsius" />
+       <TableColumn fx:id="fahrenheitCol" editable="false" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" sortable="false" text="Fahrenheit" />
+         <TableColumn fx:id="kelvinCol" editable="false" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" sortable="false" text="Kelvin" />
+     </columns>
+   </TableView>
+</VBox>
