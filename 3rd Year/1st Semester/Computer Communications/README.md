@@ -1,3 +1,0 @@
-# Computer Communications
-
-- The objective of this course is to address the highest layers of the protocol stack: Network Level - detail and apply dynamic routing algorithms and identify the most used protocols; Transport Level - understand the mechanisms of the transport layer: error control, flow control, congestion control, connection establishment and termination, acquiring the competence to develop applications with TCP and UDP sockets; Application: operation and efficiency of HTTP, but also of other fundamental applications such as name resolution service (DNS) or file transfer (FTP/SFTP/TFTP); Security in these three layers. This alignment of content with the protocol stack is the most common in the area.
