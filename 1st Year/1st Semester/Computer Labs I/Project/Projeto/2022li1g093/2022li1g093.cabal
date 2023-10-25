@@ -1,0 +1,67 @@
+cabal-version:      2.4
+name:               2022li1g093
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+author:             João Manuel Novais da Silva <a91671@alunos.uminho.pt>
+                    Pedro António Pires Correia Leite Sequeira <a91660@alunos.uminho.pt>
+
+library
+  exposed-modules:
+    LI12223
+    Tarefa1_2022li1g093
+    Tarefa2_2022li1g093
+    Tarefa3_2022li1g093
+    Tarefa4_2022li1g093
+    Tarefa5_2022li1g093
+    Tarefa6_2022li1g093
+    HighScore
+    SalvaJogo
+  build-depends:    base ^>=4.16.3.0
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable 2022li1g093
+  main-is:          Main.hs
+  other-modules:
+    LI12223
+    Tarefa1_2022li1g093
+    Tarefa2_2022li1g093
+    Tarefa3_2022li1g093
+    Tarefa4_2022li1g093
+    Tarefa5_2022li1g093
+    Tarefa6_2022li1g093
+    SalvaJogo
+    HighScore
+  build-depends:    base ^>=4.16.3.0
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+test-suite 2022li1g093-tests
+  type:                 exitcode-stdio-1.0
+  main-is:              Spec.hs
+  other-modules:
+    LI12223
+    Tarefa1_2022li1g093
+    Tarefa2_2022li1g093
+    Tarefa3_2022li1g093
+    Tarefa4_2022li1g093
+    Tarefa5_2022li1g093
+    Tarefa6_2022li1g093
+    Tarefa1_2022li1g093_Spec
+    Tarefa2_2022li1g093_Spec
+    Tarefa3_2022li1g093_Spec
+    Tarefa4_2022li1g093_Spec
+    Tarefa5_2022li1g093_Spec
+    Tarefa6_2022li1g093_Spec
+    TestesLibrary
+    SalvaJogo
+    HighScore
+  build-depends:        base ^>=4.16.3.0, HUnit
+  hs-source-dirs:       tests src
+  default-language:     Haskell2010
