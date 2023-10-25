@@ -1,0 +1,801 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> codigo
+Rule 1     codigo -> <empty>
+Rule 2     codigo -> codigo END
+Rule 3     codigo -> codigo bloco
+Rule 4     conteudo -> String
+Rule 5     conteudo -> TIME
+Rule 6     conteudo -> DATE
+Rule 7     conteudo -> OFFSETDATETIME
+Rule 8     conteudo -> DATETIME
+Rule 9     conteudo -> BOOLEAN
+Rule 10    conteudo -> BINARY
+Rule 11    conteudo -> OCTAL
+Rule 12    conteudo -> HEXADECIMAL
+Rule 13    conteudo -> INT
+Rule 14    conteudo -> FLOAT
+Rule 15    conteudo -> EXPONENTE
+Rule 16    conteudo -> INFINITO
+Rule 17    conteudo -> NAN
+Rule 18    conteudo -> lista
+Rule 19    conteudo -> inline_table
+Rule 20    String -> STRING
+Rule 21    String -> MULTILINESTRING
+Rule 22    lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO
+Rule 23    lista -> PARENTESERETOABERTO PARENTESERETOFECHO
+Rule 24    elems -> elems VIRGULA conteudo
+Rule 25    elems -> conteudo
+Rule 26    codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco
+Rule 27    codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO
+Rule 28    chaves -> KEY PONTO KEY
+Rule 29    chaves -> KEY
+Rule 30    bloco -> bloco KEY EQUALS conteudo
+Rule 31    bloco -> KEY EQUALS conteudo
+Rule 32    inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO
+Rule 33    insideTable -> insideTable VIRGULA bloco
+Rule 34    insideTable -> bloco
+
+Terminals, with rules where they appear
+
+BINARY               : 10
+BOOLEAN              : 9
+CHAVETAABERTO        : 32
+CHAVETAFECHO         : 32
+DATE                 : 6
+DATETIME             : 8
+END                  : 2
+EQUALS               : 30 31
+EXPONENTE            : 15
+FLOAT                : 14
+HEXADECIMAL          : 12
+INFINITO             : 16
+INT                  : 13
+KEY                  : 28 28 29 30 31
+MULTILINESTRING      : 21
+NAN                  : 17
+OCTAL                : 11
+OFFSETDATETIME       : 7
+PARENTESERETOABERTO  : 22 23 26 27
+PARENTESERETOFECHO   : 22 23 26 27
+PONTO                : 28
+STRING               : 20
+TIME                 : 5
+VIRGULA              : 24 33
+error                : 
+
+Nonterminals, with rules where they appear
+
+String               : 4
+bloco                : 3 26 30 33 34
+chaves               : 26 27
+codigo               : 2 3 26 27 0
+conteudo             : 24 25 30 31
+elems                : 22 24
+inline_table         : 19
+insideTable          : 32 33
+lista                : 18
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . codigo
+    (1) codigo -> .
+    (2) codigo -> . codigo END
+    (3) codigo -> . codigo bloco
+    (26) codigo -> . codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco
+    (27) codigo -> . codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO
+
+    END             reduce using rule 1 (codigo -> .)
+    PARENTESERETOABERTO reduce using rule 1 (codigo -> .)
+    KEY             reduce using rule 1 (codigo -> .)
+    $end            reduce using rule 1 (codigo -> .)
+
+    codigo                         shift and go to state 1
+
+state 1
+
+    (0) S' -> codigo .
+    (2) codigo -> codigo . END
+    (3) codigo -> codigo . bloco
+    (26) codigo -> codigo . PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco
+    (27) codigo -> codigo . PARENTESERETOABERTO chaves PARENTESERETOFECHO
+    (30) bloco -> . bloco KEY EQUALS conteudo
+    (31) bloco -> . KEY EQUALS conteudo
+
+    END             shift and go to state 2
+    PARENTESERETOABERTO shift and go to state 4
+    KEY             shift and go to state 5
+
+    bloco                          shift and go to state 3
+
+state 2
+
+    (2) codigo -> codigo END .
+
+    END             reduce using rule 2 (codigo -> codigo END .)
+    PARENTESERETOABERTO reduce using rule 2 (codigo -> codigo END .)
+    KEY             reduce using rule 2 (codigo -> codigo END .)
+    $end            reduce using rule 2 (codigo -> codigo END .)
+
+
+state 3
+
+    (3) codigo -> codigo bloco .
+    (30) bloco -> bloco . KEY EQUALS conteudo
+
+  ! shift/reduce conflict for KEY resolved as shift
+    END             reduce using rule 3 (codigo -> codigo bloco .)
+    PARENTESERETOABERTO reduce using rule 3 (codigo -> codigo bloco .)
+    $end            reduce using rule 3 (codigo -> codigo bloco .)
+    KEY             shift and go to state 6
+
+  ! KEY             [ reduce using rule 3 (codigo -> codigo bloco .) ]
+
+
+state 4
+
+    (26) codigo -> codigo PARENTESERETOABERTO . chaves PARENTESERETOFECHO bloco
+    (27) codigo -> codigo PARENTESERETOABERTO . chaves PARENTESERETOFECHO
+    (28) chaves -> . KEY PONTO KEY
+    (29) chaves -> . KEY
+
+    KEY             shift and go to state 8
+
+    chaves                         shift and go to state 7
+
+state 5
+
+    (31) bloco -> KEY . EQUALS conteudo
+
+    EQUALS          shift and go to state 9
+
+
+state 6
+
+    (30) bloco -> bloco KEY . EQUALS conteudo
+
+    EQUALS          shift and go to state 10
+
+
+state 7
+
+    (26) codigo -> codigo PARENTESERETOABERTO chaves . PARENTESERETOFECHO bloco
+    (27) codigo -> codigo PARENTESERETOABERTO chaves . PARENTESERETOFECHO
+
+    PARENTESERETOFECHO shift and go to state 11
+
+
+state 8
+
+    (28) chaves -> KEY . PONTO KEY
+    (29) chaves -> KEY .
+
+    PONTO           shift and go to state 12
+    PARENTESERETOFECHO reduce using rule 29 (chaves -> KEY .)
+
+
+state 9
+
+    (31) bloco -> KEY EQUALS . conteudo
+    (4) conteudo -> . String
+    (5) conteudo -> . TIME
+    (6) conteudo -> . DATE
+    (7) conteudo -> . OFFSETDATETIME
+    (8) conteudo -> . DATETIME
+    (9) conteudo -> . BOOLEAN
+    (10) conteudo -> . BINARY
+    (11) conteudo -> . OCTAL
+    (12) conteudo -> . HEXADECIMAL
+    (13) conteudo -> . INT
+    (14) conteudo -> . FLOAT
+    (15) conteudo -> . EXPONENTE
+    (16) conteudo -> . INFINITO
+    (17) conteudo -> . NAN
+    (18) conteudo -> . lista
+    (19) conteudo -> . inline_table
+    (20) String -> . STRING
+    (21) String -> . MULTILINESTRING
+    (22) lista -> . PARENTESERETOABERTO elems PARENTESERETOFECHO
+    (23) lista -> . PARENTESERETOABERTO PARENTESERETOFECHO
+    (32) inline_table -> . CHAVETAABERTO insideTable CHAVETAFECHO
+
+    TIME            shift and go to state 15
+    DATE            shift and go to state 16
+    OFFSETDATETIME  shift and go to state 17
+    DATETIME        shift and go to state 18
+    BOOLEAN         shift and go to state 19
+    BINARY          shift and go to state 20
+    OCTAL           shift and go to state 21
+    HEXADECIMAL     shift and go to state 22
+    INT             shift and go to state 23
+    FLOAT           shift and go to state 24
+    EXPONENTE       shift and go to state 25
+    INFINITO        shift and go to state 26
+    NAN             shift and go to state 27
+    STRING          shift and go to state 30
+    MULTILINESTRING shift and go to state 31
+    PARENTESERETOABERTO shift and go to state 32
+    CHAVETAABERTO   shift and go to state 33
+
+    conteudo                       shift and go to state 13
+    String                         shift and go to state 14
+    lista                          shift and go to state 28
+    inline_table                   shift and go to state 29
+
+state 10
+
+    (30) bloco -> bloco KEY EQUALS . conteudo
+    (4) conteudo -> . String
+    (5) conteudo -> . TIME
+    (6) conteudo -> . DATE
+    (7) conteudo -> . OFFSETDATETIME
+    (8) conteudo -> . DATETIME
+    (9) conteudo -> . BOOLEAN
+    (10) conteudo -> . BINARY
+    (11) conteudo -> . OCTAL
+    (12) conteudo -> . HEXADECIMAL
+    (13) conteudo -> . INT
+    (14) conteudo -> . FLOAT
+    (15) conteudo -> . EXPONENTE
+    (16) conteudo -> . INFINITO
+    (17) conteudo -> . NAN
+    (18) conteudo -> . lista
+    (19) conteudo -> . inline_table
+    (20) String -> . STRING
+    (21) String -> . MULTILINESTRING
+    (22) lista -> . PARENTESERETOABERTO elems PARENTESERETOFECHO
+    (23) lista -> . PARENTESERETOABERTO PARENTESERETOFECHO
+    (32) inline_table -> . CHAVETAABERTO insideTable CHAVETAFECHO
+
+    TIME            shift and go to state 15
+    DATE            shift and go to state 16
+    OFFSETDATETIME  shift and go to state 17
+    DATETIME        shift and go to state 18
+    BOOLEAN         shift and go to state 19
+    BINARY          shift and go to state 20
+    OCTAL           shift and go to state 21
+    HEXADECIMAL     shift and go to state 22
+    INT             shift and go to state 23
+    FLOAT           shift and go to state 24
+    EXPONENTE       shift and go to state 25
+    INFINITO        shift and go to state 26
+    NAN             shift and go to state 27
+    STRING          shift and go to state 30
+    MULTILINESTRING shift and go to state 31
+    PARENTESERETOABERTO shift and go to state 32
+    CHAVETAABERTO   shift and go to state 33
+
+    conteudo                       shift and go to state 34
+    String                         shift and go to state 14
+    lista                          shift and go to state 28
+    inline_table                   shift and go to state 29
+
+state 11
+
+    (26) codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO . bloco
+    (27) codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO .
+    (30) bloco -> . bloco KEY EQUALS conteudo
+    (31) bloco -> . KEY EQUALS conteudo
+
+  ! shift/reduce conflict for KEY resolved as shift
+    END             reduce using rule 27 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO .)
+    PARENTESERETOABERTO reduce using rule 27 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO .)
+    $end            reduce using rule 27 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO .)
+    KEY             shift and go to state 5
+
+  ! KEY             [ reduce using rule 27 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO .) ]
+
+    bloco                          shift and go to state 35
+
+state 12
+
+    (28) chaves -> KEY PONTO . KEY
+
+    KEY             shift and go to state 36
+
+
+state 13
+
+    (31) bloco -> KEY EQUALS conteudo .
+
+    KEY             reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+    END             reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+    PARENTESERETOABERTO reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+    $end            reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+    CHAVETAFECHO    reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+    VIRGULA         reduce using rule 31 (bloco -> KEY EQUALS conteudo .)
+
+
+state 14
+
+    (4) conteudo -> String .
+
+    KEY             reduce using rule 4 (conteudo -> String .)
+    END             reduce using rule 4 (conteudo -> String .)
+    PARENTESERETOABERTO reduce using rule 4 (conteudo -> String .)
+    $end            reduce using rule 4 (conteudo -> String .)
+    CHAVETAFECHO    reduce using rule 4 (conteudo -> String .)
+    VIRGULA         reduce using rule 4 (conteudo -> String .)
+    PARENTESERETOFECHO reduce using rule 4 (conteudo -> String .)
+
+
+state 15
+
+    (5) conteudo -> TIME .
+
+    KEY             reduce using rule 5 (conteudo -> TIME .)
+    END             reduce using rule 5 (conteudo -> TIME .)
+    PARENTESERETOABERTO reduce using rule 5 (conteudo -> TIME .)
+    $end            reduce using rule 5 (conteudo -> TIME .)
+    CHAVETAFECHO    reduce using rule 5 (conteudo -> TIME .)
+    VIRGULA         reduce using rule 5 (conteudo -> TIME .)
+    PARENTESERETOFECHO reduce using rule 5 (conteudo -> TIME .)
+
+
+state 16
+
+    (6) conteudo -> DATE .
+
+    KEY             reduce using rule 6 (conteudo -> DATE .)
+    END             reduce using rule 6 (conteudo -> DATE .)
+    PARENTESERETOABERTO reduce using rule 6 (conteudo -> DATE .)
+    $end            reduce using rule 6 (conteudo -> DATE .)
+    CHAVETAFECHO    reduce using rule 6 (conteudo -> DATE .)
+    VIRGULA         reduce using rule 6 (conteudo -> DATE .)
+    PARENTESERETOFECHO reduce using rule 6 (conteudo -> DATE .)
+
+
+state 17
+
+    (7) conteudo -> OFFSETDATETIME .
+
+    KEY             reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    END             reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    PARENTESERETOABERTO reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    $end            reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    CHAVETAFECHO    reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    VIRGULA         reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+    PARENTESERETOFECHO reduce using rule 7 (conteudo -> OFFSETDATETIME .)
+
+
+state 18
+
+    (8) conteudo -> DATETIME .
+
+    KEY             reduce using rule 8 (conteudo -> DATETIME .)
+    END             reduce using rule 8 (conteudo -> DATETIME .)
+    PARENTESERETOABERTO reduce using rule 8 (conteudo -> DATETIME .)
+    $end            reduce using rule 8 (conteudo -> DATETIME .)
+    CHAVETAFECHO    reduce using rule 8 (conteudo -> DATETIME .)
+    VIRGULA         reduce using rule 8 (conteudo -> DATETIME .)
+    PARENTESERETOFECHO reduce using rule 8 (conteudo -> DATETIME .)
+
+
+state 19
+
+    (9) conteudo -> BOOLEAN .
+
+    KEY             reduce using rule 9 (conteudo -> BOOLEAN .)
+    END             reduce using rule 9 (conteudo -> BOOLEAN .)
+    PARENTESERETOABERTO reduce using rule 9 (conteudo -> BOOLEAN .)
+    $end            reduce using rule 9 (conteudo -> BOOLEAN .)
+    CHAVETAFECHO    reduce using rule 9 (conteudo -> BOOLEAN .)
+    VIRGULA         reduce using rule 9 (conteudo -> BOOLEAN .)
+    PARENTESERETOFECHO reduce using rule 9 (conteudo -> BOOLEAN .)
+
+
+state 20
+
+    (10) conteudo -> BINARY .
+
+    KEY             reduce using rule 10 (conteudo -> BINARY .)
+    END             reduce using rule 10 (conteudo -> BINARY .)
+    PARENTESERETOABERTO reduce using rule 10 (conteudo -> BINARY .)
+    $end            reduce using rule 10 (conteudo -> BINARY .)
+    CHAVETAFECHO    reduce using rule 10 (conteudo -> BINARY .)
+    VIRGULA         reduce using rule 10 (conteudo -> BINARY .)
+    PARENTESERETOFECHO reduce using rule 10 (conteudo -> BINARY .)
+
+
+state 21
+
+    (11) conteudo -> OCTAL .
+
+    KEY             reduce using rule 11 (conteudo -> OCTAL .)
+    END             reduce using rule 11 (conteudo -> OCTAL .)
+    PARENTESERETOABERTO reduce using rule 11 (conteudo -> OCTAL .)
+    $end            reduce using rule 11 (conteudo -> OCTAL .)
+    CHAVETAFECHO    reduce using rule 11 (conteudo -> OCTAL .)
+    VIRGULA         reduce using rule 11 (conteudo -> OCTAL .)
+    PARENTESERETOFECHO reduce using rule 11 (conteudo -> OCTAL .)
+
+
+state 22
+
+    (12) conteudo -> HEXADECIMAL .
+
+    KEY             reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    END             reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    PARENTESERETOABERTO reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    $end            reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    CHAVETAFECHO    reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    VIRGULA         reduce using rule 12 (conteudo -> HEXADECIMAL .)
+    PARENTESERETOFECHO reduce using rule 12 (conteudo -> HEXADECIMAL .)
+
+
+state 23
+
+    (13) conteudo -> INT .
+
+    KEY             reduce using rule 13 (conteudo -> INT .)
+    END             reduce using rule 13 (conteudo -> INT .)
+    PARENTESERETOABERTO reduce using rule 13 (conteudo -> INT .)
+    $end            reduce using rule 13 (conteudo -> INT .)
+    CHAVETAFECHO    reduce using rule 13 (conteudo -> INT .)
+    VIRGULA         reduce using rule 13 (conteudo -> INT .)
+    PARENTESERETOFECHO reduce using rule 13 (conteudo -> INT .)
+
+
+state 24
+
+    (14) conteudo -> FLOAT .
+
+    KEY             reduce using rule 14 (conteudo -> FLOAT .)
+    END             reduce using rule 14 (conteudo -> FLOAT .)
+    PARENTESERETOABERTO reduce using rule 14 (conteudo -> FLOAT .)
+    $end            reduce using rule 14 (conteudo -> FLOAT .)
+    CHAVETAFECHO    reduce using rule 14 (conteudo -> FLOAT .)
+    VIRGULA         reduce using rule 14 (conteudo -> FLOAT .)
+    PARENTESERETOFECHO reduce using rule 14 (conteudo -> FLOAT .)
+
+
+state 25
+
+    (15) conteudo -> EXPONENTE .
+
+    KEY             reduce using rule 15 (conteudo -> EXPONENTE .)
+    END             reduce using rule 15 (conteudo -> EXPONENTE .)
+    PARENTESERETOABERTO reduce using rule 15 (conteudo -> EXPONENTE .)
+    $end            reduce using rule 15 (conteudo -> EXPONENTE .)
+    CHAVETAFECHO    reduce using rule 15 (conteudo -> EXPONENTE .)
+    VIRGULA         reduce using rule 15 (conteudo -> EXPONENTE .)
+    PARENTESERETOFECHO reduce using rule 15 (conteudo -> EXPONENTE .)
+
+
+state 26
+
+    (16) conteudo -> INFINITO .
+
+    KEY             reduce using rule 16 (conteudo -> INFINITO .)
+    END             reduce using rule 16 (conteudo -> INFINITO .)
+    PARENTESERETOABERTO reduce using rule 16 (conteudo -> INFINITO .)
+    $end            reduce using rule 16 (conteudo -> INFINITO .)
+    CHAVETAFECHO    reduce using rule 16 (conteudo -> INFINITO .)
+    VIRGULA         reduce using rule 16 (conteudo -> INFINITO .)
+    PARENTESERETOFECHO reduce using rule 16 (conteudo -> INFINITO .)
+
+
+state 27
+
+    (17) conteudo -> NAN .
+
+    KEY             reduce using rule 17 (conteudo -> NAN .)
+    END             reduce using rule 17 (conteudo -> NAN .)
+    PARENTESERETOABERTO reduce using rule 17 (conteudo -> NAN .)
+    $end            reduce using rule 17 (conteudo -> NAN .)
+    CHAVETAFECHO    reduce using rule 17 (conteudo -> NAN .)
+    VIRGULA         reduce using rule 17 (conteudo -> NAN .)
+    PARENTESERETOFECHO reduce using rule 17 (conteudo -> NAN .)
+
+
+state 28
+
+    (18) conteudo -> lista .
+
+    KEY             reduce using rule 18 (conteudo -> lista .)
+    END             reduce using rule 18 (conteudo -> lista .)
+    PARENTESERETOABERTO reduce using rule 18 (conteudo -> lista .)
+    $end            reduce using rule 18 (conteudo -> lista .)
+    CHAVETAFECHO    reduce using rule 18 (conteudo -> lista .)
+    VIRGULA         reduce using rule 18 (conteudo -> lista .)
+    PARENTESERETOFECHO reduce using rule 18 (conteudo -> lista .)
+
+
+state 29
+
+    (19) conteudo -> inline_table .
+
+    KEY             reduce using rule 19 (conteudo -> inline_table .)
+    END             reduce using rule 19 (conteudo -> inline_table .)
+    PARENTESERETOABERTO reduce using rule 19 (conteudo -> inline_table .)
+    $end            reduce using rule 19 (conteudo -> inline_table .)
+    CHAVETAFECHO    reduce using rule 19 (conteudo -> inline_table .)
+    VIRGULA         reduce using rule 19 (conteudo -> inline_table .)
+    PARENTESERETOFECHO reduce using rule 19 (conteudo -> inline_table .)
+
+
+state 30
+
+    (20) String -> STRING .
+
+    KEY             reduce using rule 20 (String -> STRING .)
+    END             reduce using rule 20 (String -> STRING .)
+    PARENTESERETOABERTO reduce using rule 20 (String -> STRING .)
+    $end            reduce using rule 20 (String -> STRING .)
+    CHAVETAFECHO    reduce using rule 20 (String -> STRING .)
+    VIRGULA         reduce using rule 20 (String -> STRING .)
+    PARENTESERETOFECHO reduce using rule 20 (String -> STRING .)
+
+
+state 31
+
+    (21) String -> MULTILINESTRING .
+
+    KEY             reduce using rule 21 (String -> MULTILINESTRING .)
+    END             reduce using rule 21 (String -> MULTILINESTRING .)
+    PARENTESERETOABERTO reduce using rule 21 (String -> MULTILINESTRING .)
+    $end            reduce using rule 21 (String -> MULTILINESTRING .)
+    CHAVETAFECHO    reduce using rule 21 (String -> MULTILINESTRING .)
+    VIRGULA         reduce using rule 21 (String -> MULTILINESTRING .)
+    PARENTESERETOFECHO reduce using rule 21 (String -> MULTILINESTRING .)
+
+
+state 32
+
+    (22) lista -> PARENTESERETOABERTO . elems PARENTESERETOFECHO
+    (23) lista -> PARENTESERETOABERTO . PARENTESERETOFECHO
+    (24) elems -> . elems VIRGULA conteudo
+    (25) elems -> . conteudo
+    (4) conteudo -> . String
+    (5) conteudo -> . TIME
+    (6) conteudo -> . DATE
+    (7) conteudo -> . OFFSETDATETIME
+    (8) conteudo -> . DATETIME
+    (9) conteudo -> . BOOLEAN
+    (10) conteudo -> . BINARY
+    (11) conteudo -> . OCTAL
+    (12) conteudo -> . HEXADECIMAL
+    (13) conteudo -> . INT
+    (14) conteudo -> . FLOAT
+    (15) conteudo -> . EXPONENTE
+    (16) conteudo -> . INFINITO
+    (17) conteudo -> . NAN
+    (18) conteudo -> . lista
+    (19) conteudo -> . inline_table
+    (20) String -> . STRING
+    (21) String -> . MULTILINESTRING
+    (22) lista -> . PARENTESERETOABERTO elems PARENTESERETOFECHO
+    (23) lista -> . PARENTESERETOABERTO PARENTESERETOFECHO
+    (32) inline_table -> . CHAVETAABERTO insideTable CHAVETAFECHO
+
+    PARENTESERETOFECHO shift and go to state 38
+    TIME            shift and go to state 15
+    DATE            shift and go to state 16
+    OFFSETDATETIME  shift and go to state 17
+    DATETIME        shift and go to state 18
+    BOOLEAN         shift and go to state 19
+    BINARY          shift and go to state 20
+    OCTAL           shift and go to state 21
+    HEXADECIMAL     shift and go to state 22
+    INT             shift and go to state 23
+    FLOAT           shift and go to state 24
+    EXPONENTE       shift and go to state 25
+    INFINITO        shift and go to state 26
+    NAN             shift and go to state 27
+    STRING          shift and go to state 30
+    MULTILINESTRING shift and go to state 31
+    PARENTESERETOABERTO shift and go to state 32
+    CHAVETAABERTO   shift and go to state 33
+
+    elems                          shift and go to state 37
+    conteudo                       shift and go to state 39
+    String                         shift and go to state 14
+    lista                          shift and go to state 28
+    inline_table                   shift and go to state 29
+
+state 33
+
+    (32) inline_table -> CHAVETAABERTO . insideTable CHAVETAFECHO
+    (33) insideTable -> . insideTable VIRGULA bloco
+    (34) insideTable -> . bloco
+    (30) bloco -> . bloco KEY EQUALS conteudo
+    (31) bloco -> . KEY EQUALS conteudo
+
+    KEY             shift and go to state 5
+
+    insideTable                    shift and go to state 40
+    bloco                          shift and go to state 41
+
+state 34
+
+    (30) bloco -> bloco KEY EQUALS conteudo .
+
+    KEY             reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+    END             reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+    PARENTESERETOABERTO reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+    $end            reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+    CHAVETAFECHO    reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+    VIRGULA         reduce using rule 30 (bloco -> bloco KEY EQUALS conteudo .)
+
+
+state 35
+
+    (26) codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco .
+    (30) bloco -> bloco . KEY EQUALS conteudo
+
+  ! shift/reduce conflict for KEY resolved as shift
+    END             reduce using rule 26 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco .)
+    PARENTESERETOABERTO reduce using rule 26 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco .)
+    $end            reduce using rule 26 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco .)
+    KEY             shift and go to state 6
+
+  ! KEY             [ reduce using rule 26 (codigo -> codigo PARENTESERETOABERTO chaves PARENTESERETOFECHO bloco .) ]
+
+
+state 36
+
+    (28) chaves -> KEY PONTO KEY .
+
+    PARENTESERETOFECHO reduce using rule 28 (chaves -> KEY PONTO KEY .)
+
+
+state 37
+
+    (22) lista -> PARENTESERETOABERTO elems . PARENTESERETOFECHO
+    (24) elems -> elems . VIRGULA conteudo
+
+    PARENTESERETOFECHO shift and go to state 42
+    VIRGULA         shift and go to state 43
+
+
+state 38
+
+    (23) lista -> PARENTESERETOABERTO PARENTESERETOFECHO .
+
+    KEY             reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    END             reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    PARENTESERETOABERTO reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    $end            reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    CHAVETAFECHO    reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    VIRGULA         reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+    PARENTESERETOFECHO reduce using rule 23 (lista -> PARENTESERETOABERTO PARENTESERETOFECHO .)
+
+
+state 39
+
+    (25) elems -> conteudo .
+
+    PARENTESERETOFECHO reduce using rule 25 (elems -> conteudo .)
+    VIRGULA         reduce using rule 25 (elems -> conteudo .)
+
+
+state 40
+
+    (32) inline_table -> CHAVETAABERTO insideTable . CHAVETAFECHO
+    (33) insideTable -> insideTable . VIRGULA bloco
+
+    CHAVETAFECHO    shift and go to state 44
+    VIRGULA         shift and go to state 45
+
+
+state 41
+
+    (34) insideTable -> bloco .
+    (30) bloco -> bloco . KEY EQUALS conteudo
+
+    CHAVETAFECHO    reduce using rule 34 (insideTable -> bloco .)
+    VIRGULA         reduce using rule 34 (insideTable -> bloco .)
+    KEY             shift and go to state 6
+
+
+state 42
+
+    (22) lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .
+
+    KEY             reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    END             reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    PARENTESERETOABERTO reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    $end            reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    CHAVETAFECHO    reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    VIRGULA         reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+    PARENTESERETOFECHO reduce using rule 22 (lista -> PARENTESERETOABERTO elems PARENTESERETOFECHO .)
+
+
+state 43
+
+    (24) elems -> elems VIRGULA . conteudo
+    (4) conteudo -> . String
+    (5) conteudo -> . TIME
+    (6) conteudo -> . DATE
+    (7) conteudo -> . OFFSETDATETIME
+    (8) conteudo -> . DATETIME
+    (9) conteudo -> . BOOLEAN
+    (10) conteudo -> . BINARY
+    (11) conteudo -> . OCTAL
+    (12) conteudo -> . HEXADECIMAL
+    (13) conteudo -> . INT
+    (14) conteudo -> . FLOAT
+    (15) conteudo -> . EXPONENTE
+    (16) conteudo -> . INFINITO
+    (17) conteudo -> . NAN
+    (18) conteudo -> . lista
+    (19) conteudo -> . inline_table
+    (20) String -> . STRING
+    (21) String -> . MULTILINESTRING
+    (22) lista -> . PARENTESERETOABERTO elems PARENTESERETOFECHO
+    (23) lista -> . PARENTESERETOABERTO PARENTESERETOFECHO
+    (32) inline_table -> . CHAVETAABERTO insideTable CHAVETAFECHO
+
+    TIME            shift and go to state 15
+    DATE            shift and go to state 16
+    OFFSETDATETIME  shift and go to state 17
+    DATETIME        shift and go to state 18
+    BOOLEAN         shift and go to state 19
+    BINARY          shift and go to state 20
+    OCTAL           shift and go to state 21
+    HEXADECIMAL     shift and go to state 22
+    INT             shift and go to state 23
+    FLOAT           shift and go to state 24
+    EXPONENTE       shift and go to state 25
+    INFINITO        shift and go to state 26
+    NAN             shift and go to state 27
+    STRING          shift and go to state 30
+    MULTILINESTRING shift and go to state 31
+    PARENTESERETOABERTO shift and go to state 32
+    CHAVETAABERTO   shift and go to state 33
+
+    conteudo                       shift and go to state 46
+    String                         shift and go to state 14
+    lista                          shift and go to state 28
+    inline_table                   shift and go to state 29
+
+state 44
+
+    (32) inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .
+
+    KEY             reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    END             reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    PARENTESERETOABERTO reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    $end            reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    CHAVETAFECHO    reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    VIRGULA         reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+    PARENTESERETOFECHO reduce using rule 32 (inline_table -> CHAVETAABERTO insideTable CHAVETAFECHO .)
+
+
+state 45
+
+    (33) insideTable -> insideTable VIRGULA . bloco
+    (30) bloco -> . bloco KEY EQUALS conteudo
+    (31) bloco -> . KEY EQUALS conteudo
+
+    KEY             shift and go to state 5
+
+    bloco                          shift and go to state 47
+
+state 46
+
+    (24) elems -> elems VIRGULA conteudo .
+
+    PARENTESERETOFECHO reduce using rule 24 (elems -> elems VIRGULA conteudo .)
+    VIRGULA         reduce using rule 24 (elems -> elems VIRGULA conteudo .)
+
+
+state 47
+
+    (33) insideTable -> insideTable VIRGULA bloco .
+    (30) bloco -> bloco . KEY EQUALS conteudo
+
+    CHAVETAFECHO    reduce using rule 33 (insideTable -> insideTable VIRGULA bloco .)
+    VIRGULA         reduce using rule 33 (insideTable -> insideTable VIRGULA bloco .)
+    KEY             shift and go to state 6
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for KEY in state 3 resolved as shift
+WARNING: shift/reduce conflict for KEY in state 11 resolved as shift
+WARNING: shift/reduce conflict for KEY in state 35 resolved as shift

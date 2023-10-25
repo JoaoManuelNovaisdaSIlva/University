@@ -1,0 +1,4 @@
+C:/Users/jmns2/Documents/GitHub/CG/cmake-build-debug/CMakeFiles/Generator.dir
+C:/Users/jmns2/Documents/GitHub/CG/cmake-build-debug/CMakeFiles/Engine.dir
+C:/Users/jmns2/Documents/GitHub/CG/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jmns2/Documents/GitHub/CG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
