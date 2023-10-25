@@ -1,0 +1,37 @@
+# DNS database file for domain silva.joao.lei.
+
+@ DEFAULT silva.joao.lei.
+TTL DEFAULT 86400
+
+@ SOASP sp.silva.joao.lei. TTL
+@ SOAADMIN admin.silva.joao.lei. TTL
+@ SOASERIAL 20222023 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+@ NS sp.silva.joao.lei. TTL
+@ NS ss1.silva.joao.lei. TTL
+@ NS ss2.silva.joao.lei. TTL
+
+@ MX mx4.silva.joao.lei. TTL
+
+
+sp A 10.1.1.13 TTL
+ss1 A 10.4.4.11 TTL
+ss2 A 10.0.12.12 TTL
+mx4 A 10.4.4.15 TTL
+
+
+
+10.1.1.13 PTR sp TTL
+10.4.4.11 PTR ss1 TTL
+10.0.12.12 PTR ss2 TTL
+10.4.4.15 PTR mx4 TTL
+
+
+# CNAMES
+spsilva CNAME sp TTL
+ss1silva CNAME ss1 TTL
+ss2silva CNAME ss2 TTL
+mail4 CNAME mx4 TTL

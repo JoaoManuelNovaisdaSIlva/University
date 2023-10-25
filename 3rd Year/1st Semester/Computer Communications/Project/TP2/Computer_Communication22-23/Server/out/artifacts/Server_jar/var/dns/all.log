@@ -1,0 +1,491 @@
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Error requesting database.
+[MESSAGE] Error requesting database.
+[MESSAGE] Error requesting database: Cannot invoke "java.util.List.get(int)" because the return value of "Config.getAddress(String)" is null
+[MESSAGE] Error requesting database: Cannot invoke "java.util.List.get(int)" because the return value of "Config.getAddress(String)" is null
+[MESSAGE] Error requesting database: Cannot invoke "java.util.List.get(int)" because the return value of "Config.getAddress(String)" is null
+[MESSAGE] Error requesting database: Cannot invoke "java.util.List.get(int)" because the return value of "Config.getAddress(String)" is null
+[MESSAGE] Requested database to SP
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Requested database to SP
+[MESSAGE] An error occurred while opening TCP Server: Connection reset
+[MESSAGE] Requested database to SP
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: 1,Q+R,0,0,0,0;example.com.,TZ;
+[MESSAGE] Requested database to SP
+[MESSAGE] An error occurred while opening TCP Server: Connection reset
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: null.
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: lei.
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: luis.lei.
+[MESSAGE] Requested database to SP
+[MESSAGE] An error occurred while opening TCP Server: Connection reset
+[MESSAGE] An error occurred while opening TCP Server: Permission denied
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: luis.lei.
+[MESSAGE] Requested database to SP
+[MESSAGE] An error occurred while opening TCP Server: Permission denied
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error requesting database: Connection refused
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] Error requesting database: For input string: "NumLines:0"
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] Requested database to SP
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 0 entries of database.
+[MESSAGE] Database transfered
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Error requesting database: Connection reset
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 0 entries of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 0 entries of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 0 entries of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Error requesting database: Connection refused: connect
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] I'm going to read 17 entries of database.
+[MESSAGE] Recieved #0 line of database.
+[MESSAGE] Recieved #1 line of database.
+[MESSAGE] Recieved #2 line of database.
+[MESSAGE] Recieved #3 line of database.
+[MESSAGE] Recieved #4 line of database.
+[MESSAGE] Recieved #5 line of database.
+[MESSAGE] Recieved #6 line of database.
+[MESSAGE] Recieved #7 line of database.
+[MESSAGE] Recieved #8 line of database.
+[MESSAGE] Recieved #9 line of database.
+[MESSAGE] Recieved #10 line of database.
+[MESSAGE] Recieved #11 line of database.
+[MESSAGE] Recieved #12 line of database.
+[MESSAGE] Recieved #13 line of database.
+[MESSAGE] Recieved #14 line of database.
+[MESSAGE] Recieved #15 line of database.
+[MESSAGE] Recieved #16 line of database.
+[MESSAGE] Database transfered
+[MESSAGE] Started listening TCP Server

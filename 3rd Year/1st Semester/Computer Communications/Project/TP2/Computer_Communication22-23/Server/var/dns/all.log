@@ -1,0 +1,35 @@
+Ola mundo!
+Ola mundo!
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Started listening TCP Server
+[MESSAGE] Recieved zone transfer: .lei.
+[MESSAGE] Sent #0 line of database.
+[MESSAGE] Sent #1 line of database.
+[MESSAGE] Sent #2 line of database.
+[MESSAGE] Sent #3 line of database.
+[MESSAGE] Sent #4 line of database.
+[MESSAGE] Sent #5 line of database.
+[MESSAGE] Sent #6 line of database.
+[MESSAGE] Sent #7 line of database.
+[MESSAGE] Sent #8 line of database.
+[MESSAGE] Sent #9 line of database.
+[MESSAGE] Sent #10 line of database.
+[MESSAGE] Sent #11 line of database.
+[MESSAGE] Sent #12 line of database.
+[MESSAGE] Sent #13 line of database.
+[MESSAGE] Sent #14 line of database.
+[MESSAGE] Sent #15 line of database.
+[MESSAGE] Sent #16 line of database.
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Socket error...Address already in use: bind
+[MESSAGE] Error while opening server...Address not set
+[MESSAGE] Error while opening server...Address not set
+# Log file for DNS server/resolver
+# Log file for DNS server/resolver

@@ -1,0 +1,5 @@
+-> Sucinto
+-> Dividir requisitos em utilizador e sistema ()
+-> Passar mockup para powerpoint
+-> Sistema logico base dados
+-> Contextualização no inicio

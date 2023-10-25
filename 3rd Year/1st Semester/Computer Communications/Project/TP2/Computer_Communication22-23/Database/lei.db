@@ -1,0 +1,41 @@
+# DNS database file for domain lei.
+
+@ DEFAULT lei.
+TTL DEFAULT 86400
+
+
+@ SOASP sp1.lei. TTL
+@ SOASP sp2.lei. TTL
+@ SOAADMIN admin.lei. TTL
+@ SOASERIAL 20222023 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAREXPIRE 604800 TTL
+
+
+@ NS sp1.lei. TTL
+@ NS sp2.lei. TTL
+
+vilas.@ NS spvilas.vilas.lei. TTL
+joao.@ NS spjoao.joao.lei. TTL
+sequeira.@ NS spsequeira.sequeira.lei. TTL
+
+
+
+sp1 A 10.2.2.2 TTL
+sp2 A 10.3.3.3 TTL
+
+
+spvilas.vilas A 10.2.2.3 TTL
+spjoao.joao A 10.0.12.11 TTL
+spsequeira.sequeira 10.2.2.10 TTL
+
+
+10.2.2.2 PTR sp1 TTL
+10.3.3.3 PTR sp2 TTL
+
+
+sp1lei CNAME sp1 TTL
+sp2lei CNAME sp2 TTL
+
+

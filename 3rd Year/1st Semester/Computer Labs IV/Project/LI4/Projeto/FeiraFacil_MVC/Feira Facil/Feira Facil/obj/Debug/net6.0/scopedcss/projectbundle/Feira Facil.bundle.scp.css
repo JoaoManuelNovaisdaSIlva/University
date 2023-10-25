@@ -1,0 +1,245 @@
+/* _content/Feira Facil/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-niw9dag45s] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-niw9dag45s] {
+  color: #0077cc;
+}
+
+.btn-primary[b-niw9dag45s] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-niw9dag45s], .nav-pills .show > .nav-link[b-niw9dag45s] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-niw9dag45s] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-niw9dag45s] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-niw9dag45s] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-niw9dag45s] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-niw9dag45s] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Feira Facil/Views/Shared/_EmpresaLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-td17jctb0o] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-td17jctb0o] {
+  color: #0077cc;
+}
+
+.btn-primary[b-td17jctb0o] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-td17jctb0o], .nav-pills .show > .nav-link[b-td17jctb0o] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-td17jctb0o] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-td17jctb0o] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-td17jctb0o] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-td17jctb0o] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-td17jctb0o] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Feira Facil/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-rz1n98et1g] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-rz1n98et1g] {
+  color: #0077cc;
+}
+
+.btn-primary[b-rz1n98et1g] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-rz1n98et1g], .nav-pills .show > .nav-link[b-rz1n98et1g] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-rz1n98et1g] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-rz1n98et1g] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-rz1n98et1g] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-rz1n98et1g] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-rz1n98et1g] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Feira Facil/Views/Shared/_UserLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-x2duoa6tei] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-x2duoa6tei] {
+  color: #0077cc;
+}
+
+.btn-primary[b-x2duoa6tei] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-x2duoa6tei], .nav-pills .show > .nav-link[b-x2duoa6tei] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-x2duoa6tei] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-x2duoa6tei] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-x2duoa6tei] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-x2duoa6tei] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-x2duoa6tei] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Feira Facil/Views/Shared/_VendedoresLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-8kgelo259i] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-8kgelo259i] {
+  color: #0077cc;
+}
+
+.btn-primary[b-8kgelo259i] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-8kgelo259i], .nav-pills .show > .nav-link[b-8kgelo259i] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-8kgelo259i] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-8kgelo259i] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-8kgelo259i] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-8kgelo259i] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-8kgelo259i] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
