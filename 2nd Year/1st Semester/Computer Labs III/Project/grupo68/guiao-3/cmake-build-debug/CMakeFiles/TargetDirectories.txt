@@ -1,3 +1,0 @@
-/media/sf_Universidade/LEI/Li3/Projeto/guiao-3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/media/sf_Universidade/LEI/Li3/Projeto/guiao-3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/sf_Universidade/LEI/Li3/Projeto/guiao-3/cmake-build-debug/CMakeFiles/guiao_3.dir
