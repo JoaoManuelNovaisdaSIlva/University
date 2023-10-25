@@ -1,2 +1,4 @@
 *.docx    binary
 *.pdf	  binary
+*.pdf linguist-vendored
+*.docx linguist-vendored
