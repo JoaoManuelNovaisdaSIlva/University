@@ -1,0 +1,109 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> ABin
+Rule 1     ABin -> NULL
+Rule 2     ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN
+Rule 3     Raiz -> NUM
+
+Terminals, with rules where they appear
+
+CLOSEPAREN           : 2
+NULL                 : 1
+NUM                  : 3
+OPENPAREN            : 2
+error                : 
+
+Nonterminals, with rules where they appear
+
+ABin                 : 2 2 0
+Raiz                 : 2
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . ABin
+    (1) ABin -> . NULL
+    (2) ABin -> . Raiz OPENPAREN ABin ABin CLOSEPAREN
+    (3) Raiz -> . NUM
+
+    NULL            shift and go to state 2
+    NUM             shift and go to state 4
+
+    ABin                           shift and go to state 1
+    Raiz                           shift and go to state 3
+
+state 1
+
+    (0) S' -> ABin .
+
+
+
+state 2
+
+    (1) ABin -> NULL .
+
+    $end            reduce using rule 1 (ABin -> NULL .)
+    NULL            reduce using rule 1 (ABin -> NULL .)
+    NUM             reduce using rule 1 (ABin -> NULL .)
+    CLOSEPAREN      reduce using rule 1 (ABin -> NULL .)
+
+
+state 3
+
+    (2) ABin -> Raiz . OPENPAREN ABin ABin CLOSEPAREN
+
+    OPENPAREN       shift and go to state 5
+
+
+state 4
+
+    (3) Raiz -> NUM .
+
+    OPENPAREN       reduce using rule 3 (Raiz -> NUM .)
+
+
+state 5
+
+    (2) ABin -> Raiz OPENPAREN . ABin ABin CLOSEPAREN
+    (1) ABin -> . NULL
+    (2) ABin -> . Raiz OPENPAREN ABin ABin CLOSEPAREN
+    (3) Raiz -> . NUM
+
+    NULL            shift and go to state 2
+    NUM             shift and go to state 4
+
+    Raiz                           shift and go to state 3
+    ABin                           shift and go to state 6
+
+state 6
+
+    (2) ABin -> Raiz OPENPAREN ABin . ABin CLOSEPAREN
+    (1) ABin -> . NULL
+    (2) ABin -> . Raiz OPENPAREN ABin ABin CLOSEPAREN
+    (3) Raiz -> . NUM
+
+    NULL            shift and go to state 2
+    NUM             shift and go to state 4
+
+    Raiz                           shift and go to state 3
+    ABin                           shift and go to state 7
+
+state 7
+
+    (2) ABin -> Raiz OPENPAREN ABin ABin . CLOSEPAREN
+
+    CLOSEPAREN      shift and go to state 8
+
+
+state 8
+
+    (2) ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN .
+
+    $end            reduce using rule 2 (ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN .)
+    NULL            reduce using rule 2 (ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN .)
+    NUM             reduce using rule 2 (ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN .)
+    CLOSEPAREN      reduce using rule 2 (ABin -> Raiz OPENPAREN ABin ABin CLOSEPAREN .)
+

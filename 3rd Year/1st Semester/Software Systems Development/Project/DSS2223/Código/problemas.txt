@@ -1,0 +1,3 @@
+-> preparacao_mecanica tem de estar na bd / alteramos cadaa vez
+-> quem chama a interface ? TextUI ?
+->

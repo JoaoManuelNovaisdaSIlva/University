@@ -1,0 +1,39 @@
+# DNS database file for domain pedro.sequeira.lei.
+
+@ DEFAULT pedro.sequeira.lei.
+TTL DEFAULT 86400
+
+@ SOASP sp.pedro.sequeira.lei. TTL
+@ SOAADMIN admin.pedro.sequeira.lei. TTL
+@ SOASERIAL 20222023 TTL
+@ SOAREFRESH 14400 TTL
+@ SOARETRY 3600 TTL
+@ SOAEXPIRE 604800 TTL
+
+@ NS sp.pedro.sequeira.lei. TTL
+@ NS ss1.pedro.sequeira.lei. TTL
+@ NS ss2.pedro.sequeira.lei. TTL
+
+
+@ MX mx6.pedro.sequeira.lei. TTL
+
+
+sp A 10.3.3.1 TTL
+ss1 A 10.4.4.12 TTL
+ss2 A 10.2.2.11 TTL
+mx6 A 10.0.12.20 TTL
+
+
+
+10.3.3.1 PTR sp TTL
+10.4.4.12 PTR ss1 TTL
+10.2.2.11 PTR ss2 TTL
+10.0.12.20 PTR mx6 TTL
+
+
+
+# CNAMES
+sppedro CNAME sp TTL
+ss1pedro CNAME ss1 TTL
+ss2pedro CNAME ss2 TTL
+mail6 CNAME mx6 TTL

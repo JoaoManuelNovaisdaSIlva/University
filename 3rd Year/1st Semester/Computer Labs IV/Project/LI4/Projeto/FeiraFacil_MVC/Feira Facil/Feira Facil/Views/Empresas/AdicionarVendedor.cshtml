@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Registar";
+    Layout = "~/Views/Shared/_EmpresaLayout.cshtml";
+}
+
+@if (ViewBag.Error)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Message
+    </div>
+}
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            <form method="POST">
+                @Html.AntiForgeryToken()
+                <h4>Adição de Vendedor !</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+                        Nome: <br />
+                        <input id="nome" class="form-control" name="nome" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        Password: <br />
+                        <input id="password" class="form-control" type="password" name="password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        Confirmação de Password: <br />
+                        <input id="password" class="form-control" type="password" name="passwordConfirm" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        Contactos (separados por espaço): <br />
+                        <input id="contactos" class="form-control" type="text" name="contactos" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        Morada: <br />
+                        <input id="morada" class="form-control" type="text" name="morada" />
+                    </div>
+                </div><br />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Registar" class="btn btn-success mb-2" />
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
