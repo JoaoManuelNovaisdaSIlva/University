@@ -1,0 +1,8 @@
+Coisas a mudar no trabalho de li1:
+	- usar a função elem para ver se existe um obstáculo numa dada linha
+	- 	f | condição = True
+		  | otherwise = False
+		é o mesmo que:
+		f = condição
+	- usar função all que verifica True se uma dada verificação for True para todos os elementos da lista dada.
+	
