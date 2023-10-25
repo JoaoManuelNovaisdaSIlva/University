@@ -1,0 +1,190 @@
+<!-- ./Generator torus 0.7 1.1 150 100 torus.3d -->
+<!-- ./Generator sphere 1 15 15 sphere.3d -->
+
+<world>
+    <window width="512" height="512" />
+    <camera>
+        <position x="50" y="50" z="80" />
+        <lookAt x="60" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="60" near="1" far="1000" />
+    </camera>
+
+    <group>
+        <!--Sol-->
+        <group>
+            <transform>
+                <translate x="0" y="0" z="0" />
+                <scale x="10" y="10" z="10" />
+				<color R="255" G="211" B="92" />
+            </transform>
+            <models>
+                <model file="sphere.3d" />
+            </models>
+        </group>
+
+		<!-- Mercurio -->
+        <group>
+            <transform>
+                <translate x="16" y="0" z="0" />
+                <scale x="0.36" y="0.36" z="0.36" />
+				<color R="167" G="167" B="167" />
+            </transform>
+            <models>
+                <model file="sphere.3d" />
+            </models>
+        </group>
+ 
+ 		<!-- Venus -->
+        <group>
+            <transform>
+                <translate x="20" y="0" z="0" />
+                <scale x="0.88" y="0.88" z="0.88" />
+				<color R="244" G="194" B="92" />
+            </transform>
+            <models>
+                <model file="sphere.3d" />
+            </models>
+        </group>
+
+		<!-- terra -->
+		<group>
+			<transform>
+				<translate x="25" y="0" z="0" />
+				<scale x="0.93" y="0.93" z="0.93" />
+				<color R="3" G="113" B="181" />
+			</transform>
+			<models>
+				<model file="sphere.3d" />
+			</models>
+
+			<!-- lua -->
+			<group>
+				<transform>
+					<translate x="1.5" y="1.5" z="1.5" />
+					<scale x="0.247" y="0.247" z="0.247" />
+					<color R="211" G="211" B="211" />
+				</transform>
+				<models>
+					<model file="sphere.3d" />
+				</models>
+			</group>
+		</group>
+
+		<!-- marte -->
+		<group>
+			<transform>
+				<translate x="30" y="0" z="0" />
+				<scale  x="0.48" y="0.48" z="0.48" />
+				<color R="206" G="97" B="48" />
+			</transform>
+			<models>
+				<model file="sphere.3d" />
+			</models>
+
+			<!-- phobos -->
+			<group>
+				<transform>
+					<translate x="0.7" y="0" z="0.8" />
+					<scale x="0.190" y="0.190" z="0.190" />
+					<color R="139" G="126" B="122" />
+				</transform>
+				<models>
+					<model file="sphere.3d" />
+				</models>
+			</group>
+			
+			<!-- deimos -->
+			<group>
+				<transform>
+					<translate x="0.8" y="0" z="1.5" />
+					<scale x="0.054" y="0.054" z="0.054" />
+					<color R="172" G="166" B="159" />
+				</transform>
+				<models>
+					<model file="sphere.3d" />
+				</models>
+			</group>
+		</group>
+
+		<!-- jupiter -->
+		<group>
+			<transform>
+				<translate x="38" y="0" z="0" />
+				<scale x="2.73" y="2.73" z="2.73" />
+				<color R="255" G="171" B="65" />
+			</transform>
+			<models>
+				<model file="sphere.3d" />
+			</models>
+		</group>
+
+		<!-- saturno -->
+<group>
+    <group>
+        <transform>
+            <translate x="50" y="0" z="0" />
+            <scale x="2.3" y="2.3" z="2.3" />
+            <color R="232" G="186" B="123" />
+        </transform>
+        <models>
+            <model file="sphere.3d" />
+        </models>
+    </group>
+
+    <group>
+        <transform>
+            <translate x="50" y="0" z="0" />
+            <color R='115' G='109' B='109'/>
+            <scale x='5' y='0.3' z='5'/>
+			<rotate angle="-50" x="2" y="0" z="1" />
+        </transform>
+
+        <models>
+            <model file="torus.3d" />
+        </models>
+    </group>
+</group>
+
+
+		<!-- urano -->
+		<group>
+			<transform>
+				<translate x="60" y="0" z="0" />
+				<scale x="1.788" y="1.788" z="1.788" />
+				<color R="164" G="222" B="232" />
+			</transform>
+			<models>
+				<model file="sphere.3d" />
+			</models>
+
+		</group>
+
+		<!-- neptuno -->
+		<group>
+    		<transform>
+        		<translate x="70" y="0" z="0" />
+        		<scale x="1.774" y="1.774" z="1.774" />
+				<color R="72" G="111" B="198" />
+    		</transform>
+    		<models>
+        		<model file="sphere.3d" />
+    		</models>
+
+</group>
+
+		<!-- pluto -->
+		<group>
+    		<transform>
+        		<translate x="75" y="0" z="0" />
+        		<scale x="0.1" y="0.1" z="0.1" />
+				<color R="134" G="87" B="6" />
+    		</transform>
+    		<models>
+        		<model file="sphere.3d" />
+    		</models>
+
+</group>
+
+    </group>
+</world>
