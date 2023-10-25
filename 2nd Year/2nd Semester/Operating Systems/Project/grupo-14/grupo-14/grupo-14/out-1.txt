@@ -1,3 +1,0 @@
-nop 3
-gcompress 2
-bin 3

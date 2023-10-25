@@ -1,7 +1,0 @@
-nop 3
-bcompress 4
-bdecompress 5
-decrypt 4
-encrypt 4
-gcompress 4
-gdecompress 5

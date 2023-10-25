@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=GestaoEncomenda
-comment0.text=\n\ Write\ a\ description\ of\ class\ GestaoEncomenda\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=GestaoEncomenda()
-comment2.params=linhas
-comment2.target=GestaoEncomenda(java.util.List)
-numComments=3

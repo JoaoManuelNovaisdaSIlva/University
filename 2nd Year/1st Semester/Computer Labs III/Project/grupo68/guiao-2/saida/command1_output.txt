@@ -1,3 +1,0 @@
-Bot: 72
-Organization: 22903
-Users: 404409
