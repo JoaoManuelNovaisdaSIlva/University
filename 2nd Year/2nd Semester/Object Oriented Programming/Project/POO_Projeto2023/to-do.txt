@@ -1,0 +1,28 @@
+POO projeto coisas para fazer:
+
+	. Passar 0,1,2 para enums; # FEITO
+	. As contas de descontos iniciais são feitas pelo sistema no menu (Sapatilhas novas não podem ter desconto); # FEITO
+	. Quando um user criar conta, após criar a sua conta base (Objeto Utilizador), ainda precisa de configurar as suas contas de vendedor e comprador se quiser usufruir das suas opções # NÃO VAI SER FEITO
+	
+	. Na classe que vai juntar tudo -> ter Maps # FEITO
+	. Nesta tb tem q haver um método que receba um barcode e devolva o artigo # FEITO
+	. Definir variáveis globais do custo de expedição de cada tamanho de encomenda assim como os impostos # FEITO
+
+
+	. Quando esta a ser definida uma entragadora esta pode escolher a formula default ou uma nova # FEITO
+	. Fazer logins # FEITO
+	. Visualizar dados (Admin?)
+
+- As entregadoras entregam a encomenda toda ou apenas os artigos? ##
+- Ter a formula do preço de expediçao como static, para dps ser possivel mudar?
+
+PARA ACABAR:
+
+		-> FAZER MNIPULAÇÃO DO TEMPO # FEITO
+		-> RANKING DE VENDAS #FEITO
+		-> CONTAS DE PREÇOS, DESCONTOS E ALTERAÇÂO DE PREÇO AO LONGO DO TEMPO # FEITO
+
+----------> MUDAR AS TOSTRINGS
+----------> BUG AO PASSAR PARA EXPEDIDO (TALVEZ TERMINEI O PROGRAMA ANTES DE SALTAR-- A ENCOMENDAS FINALIZADAS NAO SAO GUARDADAS NA MEMORIA)
+I helped eheheh
+jk

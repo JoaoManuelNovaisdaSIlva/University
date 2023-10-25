@@ -1,3 +1,0 @@
-# Language Processing
-
-- This course has as it's objectives to teach students to specify domain-specific languages through grammars and to develop processors for these languages based on the grammar perspective. Also to use programs that produce programs based on formal specifications (lexical analyzer and compiler generators) and acquire knowledge about automata as formal models of state machines and the basis of table-guided sentence recognizers. All of this by using generic IT tools in a Linux environment based on regular expressions, graphs or others.

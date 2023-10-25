@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Aluno
+comment0.text=\n\ Write\ a\ description\ of\ class\ Aluno\ here.\n\ Esta\ classe\ esta\ nos\ slides\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=java.lang.String\ getNome()
+comment2.params=
+comment2.target=java.lang.String\ getNumero()
+numComments=3

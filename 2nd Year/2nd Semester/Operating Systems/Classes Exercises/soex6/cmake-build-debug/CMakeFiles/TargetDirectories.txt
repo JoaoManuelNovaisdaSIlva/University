@@ -1,0 +1,3 @@
+/home/joaodatina/CLionProjects/soex6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joaodatina/CLionProjects/soex6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joaodatina/CLionProjects/soex6/cmake-build-debug/CMakeFiles/soex6.dir

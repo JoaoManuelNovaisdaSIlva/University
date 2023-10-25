@@ -1,2 +1,0 @@
-joao;123;1
-manuel;abc;2
