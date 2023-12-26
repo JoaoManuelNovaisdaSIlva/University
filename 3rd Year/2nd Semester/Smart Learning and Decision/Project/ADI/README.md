@@ -3,7 +3,7 @@
 ### Grupo de Trabalho:
 - [Afonso Bessa](https://github.com/AsseB2519)
 - [Martim Ribeiro](https://github.com/sldx12)
-- [João Silva](https://github.com/JoaoManuelNovaisdaSIlva)
+- [João Silva](https://github.com/jmns01)
 - [Luís Vilas](https://github.com/LuisFilipe6)
 
 ## Conceção de Modelos de Aprendizagem
