@@ -1,0 +1,31 @@
+Geração de Recompensas:
+	- deve correr em background
+	- deve verificar se existem espaços de diâmetro D sem trotinete livre
+	- esta situação deve ser reavaliada sempre que um trotinete é reservada ou estacionada
+
+
+Servidor:
+	- threads e sockets TCP
+	- recever conexões e input dos clientes
+	- enviar a informação pretendida
+
+Biblioteca do cliente:
+	- conjunto de classes e interfaces que dêm acesso ao servidor
+
+Interface do utilizador:
+	- permitira interagir com o serviço através da biblioteca do cliente
+	- prints e switch cases
+
+Requisitos:
+	- Cada cliente apenas pode ter uma única conexão, haver um thread para cada cliente
+	- codificação binária
+	- cada socket tem apenas um thread associado a este
+
+
+MUDAR OS REGISTOS
+
+parser é para:
+	- verificar o login
+	- registar o utilizador
+	- verificar se existe o utilizador
+

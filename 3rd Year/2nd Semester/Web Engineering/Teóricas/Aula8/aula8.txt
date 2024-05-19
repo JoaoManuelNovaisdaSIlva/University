@@ -1,0 +1,10 @@
+Metodologias para envio e receção de ficheiros:
+	
+	. 1 - Envio em binário
+		- Só dá para enviar um ficheiro de cada vez
+	. 2 - Envio em multipart/form data (é o que vamos usar)
+	. 3 - Envio em Base64
+
+Para correr o que o prof fez:
+	npm i
+	node app.js

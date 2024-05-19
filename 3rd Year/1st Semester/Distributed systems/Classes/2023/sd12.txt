@@ -1,0 +1,22 @@
+frame 		X
+demultiplexer	X
+connection		x
+
+
+server 
+	cliente handler
+cliente
+
+userbd = parse?
+
+Localizaçao
+Mapa
+Reserve?
+
+gajos:
+clienteMain -> menu -> api.register
+
+meu:
+cliente -> queries.register -> server -> writetofile
+
+MUDAR O MEU FICHEIRO QUERIES

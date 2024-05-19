@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .w3-card-4 
+    header.w3-container.w3-teal
+      h1=title 
+    .w3-container
+        table.w3-table-all
+            tr 
+                th NAtómico
+                th Nome
+            each elem in lista
+                tr 
+                    td= elem.na
+                    td= elem.nome
+    footer.w3-container.w3-teal
+      h5 Generado por EngWeb2024 in #{data}

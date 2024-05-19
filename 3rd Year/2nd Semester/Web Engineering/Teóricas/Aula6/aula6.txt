@@ -1,0 +1,98 @@
+docker pull mongo
+docker run -d -p 27017:27017 --name mongoEW mongo
+	. porta interna default: 27017 para o mongoDB
+	. para mudar a porta externa: (-p 5000:27017) o container responde na 5000 
+docker exec -it mongoEW mongosh
+
+	test> show dbs
+
+Databases
+	1ª forma normal: So exitem tipos primitivos não estruturas
+	2ª forma normal...
+
+As bases de dados nao sql não têm schema
+	Base de dados orientadas a grafos
+	Base de dados orientadas a documentos
+
+	
+a syntax do mongo é o json
+estrutura dos jsons da mongoDB
+	
+[
+	{
+		"_id" : "Axxxx",
+		"nome" : "XXXXX",
+		"gitlink" : "XXXXXX
+	},
+...
+]
+
+meter um dataset no container
+docker cp xxx.json mongoEW:/tmp
+docker exec -it mongoEW bash
+	mongoimport -d pubs -c pubs /tmp/jcrpubs.json --jsonArray
+		(-d database) (-c collection)
+		database : pubs
+		collections: pubs
+			     users
+			     ...
+
+dentro do docker exec -it mongoEW mongosh
+	test> show dbs
+	test> use pubs
+	pubs> db.pubds.find()
+	pubs> db.pubs.findOne()
+	pubs> db.pubs.countDocuments()	
+
+SELECT:
+	pubs> db.pubs.find({year : '2011'})
+	pubs> db.pubs.find({year : {$gte : '2011'}}) // maior que 2011
+	pubs> db.pubs.find({year : {$gte : '2011'}}, {title:1}) // fazer projeção (seleção de colunas)
+	pubs> db.pubs.find({year : {$gte : '2011'}}, {title:1, _id:0}) // para tirar o _id
+	pubs> db.pubs.find({year : {$gte : '2011'}}, {title:1, _id:0}).sort({title:1}) // -1 para ordem contraria
+	pubs> db.pubs.find({}, {title:1, _id:0, type:1, year:1}).sort({year:-1}) // ordenar por ano descendente com o tipo, ano e titulo
+	pubs> db.pubs.find({}, {title:1, _id:0, type:1, year:1}).sort({year:-1, title:1}) // ordenar descendente o ano e ascendente o titulo
+	pubs> db.pubs.find({"authors" : "Pedro Rangel Henriques"}, {title:1, _id:0, type:1, year:1})
+	pubs> db.pubs.aggregate([
+			{"$unwind": "$authors"},
+			{"$match": {"authors": "José Carlos Ramalho"}},
+			{"$group": {"_id" : "$year", "count" : {"$sum": 1}}}
+		])
+		
+	      db.pubs.aggregate([
+			{"$unwind": "$authors"},
+			{"$match": {"authors": "José Carlos Ramalho"}},
+			{"$group": {"_id" : "$year", "count" : {"$sum": 1}}},
+			{"$sort" : {"_id" : -1}}
+		])
+
+
+// calcular uma disctribuição de artigos por ano
+// o unwind vai pegar nas coleções e denrola-as em mais registos		
+
+	pubs> db.pubs.insert({_id : "xyz", comida:"pasta italiana", titulo:"Era uma vez"})
+
+// cuidado com os tipos das respostas find => lista, findOne => Objeto
+
+
+TPC 6:
+	. Dataset dos compositores
+	. Carregar dataset no mongo db
+	. Usar o express para criar uma api de dados REST
+		. Recebe pedidos HTTP e responde com json
+		. Sempre que percisar de dados pede ao mongoDB os dados
+	. Fazer interface que recebe pedidos e responde com HTML
+		. Sempre que percisar de dados vai pedir à API
+
+--
+ORM 
+Uma camada que fica entre o API e o mongoDB que faz as queries necessárias
+
+
+Workflow aplicacional
+
+Para cada coleção:
+
+	1. Roteador
+	2. Controlador // query à bd
+	3. Modelo (mongoose)

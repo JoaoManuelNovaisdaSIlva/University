@@ -1,0 +1,2 @@
+db.alunos.find().sort({nome:1})
+db.alunos.findOne({_id:"A96208"})

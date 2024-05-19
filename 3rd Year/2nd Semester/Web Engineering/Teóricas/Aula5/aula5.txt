@@ -1,0 +1,17 @@
+Pipelines:
+	.Verticais
+	.Horizontais
+
+Pipelines Vertical:
+
+func1 | app.use(..)
+func2 | ...
+func3 | ...
+
+-> Cada pedido passa por todas as funções deste pipeline
+-> O pipeline apenas é executado até haver uma resposta ao cliente
+
+Pug é uma linguagem de indentação (como o python)
+	quando temos = o que está asseguir é conciderado um pedaço de js
+	quando temos um ' ' assum que temos texto à frente
+

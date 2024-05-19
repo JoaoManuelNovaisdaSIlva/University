@@ -1,0 +1,3 @@
+	- verificar se o mesmo cliente faz vária conexoes
+	- usar sempre a mesma porta?
+	- condicionals e saber gerir o facto de haver apenas uma porta
